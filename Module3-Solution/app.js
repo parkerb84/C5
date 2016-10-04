@@ -40,9 +40,6 @@
           if (menu.found.length === 0) {
             menu.error = "Nothing found!";
           }
-          console.log("MenuError: ", menu.error);
-          console.log("MenuShortName: ", menu.shortName);
-          console.log("SearchTerm: ", searchTerm);
         })
         .catch(function (error) {
           console.log("Something went terribly wrong.");
@@ -69,14 +66,12 @@
       }).then(function (result) {
         menuItems = result.data;
         menuItems = menuItems.menu_items;
-
         for(var i = 0; i <= menuItems.length-1; i++){
           var item = menuItems[i].description;
           if (item.toLowerCase().indexOf(searchTerm) !== -1 ){
             matchedItems.push(menuItems[i]);
           }
         }
-
         return matchedItems;
       });
     }
