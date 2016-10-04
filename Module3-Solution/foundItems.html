@@ -1,5 +1,5 @@
 <h3><span ng-if="error">{{error}}</span></h3>
-
+<div>
 <li ng-repeat="item in found" class="row">
   <div class="col-md-1">
     <span class="menu-name">{{item.short_name}}</span>
@@ -14,3 +14,4 @@
     <button ng-click="onRemove({index: $index})" class="btn btn-warning btn-xs">Don't want this one!</button>
   </div>
 </li>
+</div>

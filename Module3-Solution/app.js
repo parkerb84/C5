@@ -15,7 +15,7 @@
         error: '<'
       }
     };
-    
+
     return ddo;
   }
 
@@ -26,6 +26,7 @@
     menu.error = "";
 
     menu.getMatchedMenuItems = function (searchTerm) {
+      console.log(menu);
       if (searchTerm === "" || searchTerm === undefined) {
         menu.error = "Nothing found!";
       }
