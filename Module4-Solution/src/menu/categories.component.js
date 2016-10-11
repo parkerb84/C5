@@ -3,10 +3,10 @@
 
   angular.module('data')
   .component('categories', {
-    templateUrl: 'src/templates/categories.template.html',
+    templateUrl: 'src/menu/templates/category.template.html',
     bindings: {
       category: '<'
     }
   });
-  
+
 })();

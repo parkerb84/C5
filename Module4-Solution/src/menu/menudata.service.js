@@ -14,7 +14,7 @@
           url: (ApiBasePath + "/categories.json")
       });
 
-      return response;
+      return response.data;
     };
 
     service.getItemsForCategory = function(categoryShortName) {
@@ -22,11 +22,11 @@
         method: "GET",
         url: (ApiBasePath + "/menu_items.json"),
         params: {
-          categoryShortName: shortName
+          category: categoryShortName
         }
       });
 
-      return response;
+      return response.data;
     };
   }
 

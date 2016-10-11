@@ -3,10 +3,10 @@
 
   angular.module('data')
   .component('items', {
-    templateUrl: 'src/templates/items.template.html',
+    templateUrl: 'src/menu/templates/item-template.html',
     bindings: {
       item: '<'
     }
   });
-  
+
 })();
