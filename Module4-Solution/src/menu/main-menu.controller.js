@@ -4,9 +4,9 @@
   angular.module('MenuApp')
   .controller('MainMenuAppController', MainMenuAppController);
 
-  MainMenuAppController.$inject = ['categories'];
-  function MainMenuAppController(categories) {
+  MainMenuAppController.$inject = ['items'];
+  function MainMenuAppController(items) {
     var mainList = this;
-    mainList.categories = categories;
+    mainList.categories = items;
   }
 })();
