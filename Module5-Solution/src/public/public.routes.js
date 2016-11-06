@@ -55,7 +55,7 @@ function routeConfig ($stateProvider) {
           function(SignUpService) {
             return SignUpService.getFavoriteDish()
             .then(function (response) {
-
+              return response.data;
             })
             .catch(function (error) {
             });
