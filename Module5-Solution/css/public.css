@@ -112,7 +112,24 @@ h3.menu-item-title {
   font-style: italic;
 }
 /* END SINGLE CATEGORY PAGE */
+/* For Forms */
 
+label {
+    width: 120px;
+    float: left;
+    text-align: right;
+    margin-right: 10px;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 250px;
+    color:black;
+}
+.center {
+    text-align: center;
+    margin: 0px auto;
+    color: black;
+}
+/* End of Forms */
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
