@@ -1,12 +1,12 @@
 <h2>My Subscription</h2>
 
-<div ng-if="infocontroller.menuItems">
+<div ng-if="infoctrl.menuItems">
   <div> Your favorite dish is: </div>
-  <div> Name: {{ infocontroller.menuItems.name }} </div>
-  <div> Description: {{ infocontroller.menuItems.description }} </div>
-  <img class="img-responsive" width="250" height="150" ng-src="{{infocontroller.apiBase}}/images/{{infocontroller.menuItems.short_name}}.jpg" alt="{{infocontroller.menuItems.name}}">
+  <div> Name: {{ infoctrl.menuItems.name }} </div>
+  <div> Description: {{ infoctrl.menuItems.description }} </div>
+  <img class="img-responsive" width="250" height="150" ng-src="{{infoctrl.apiBase}}/images/{{infoctrl.menuItems.short_name}}.jpg" alt="{{infoctrl.menuItems.name}}">
 </div>
 
-<div ng-if="!infocontroller.menuItems">
+<div ng-if="!infoctrl.menuItems">
   Not Signed Up Yet. <a ui-sref="public.signUp">Sign up Now!</a>
 </div>
